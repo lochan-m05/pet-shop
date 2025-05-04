@@ -1,0 +1,28 @@
+# Pet Shop Management System
+
+A comprehensive backend system for managing a pet shop, including pet records, customer interactions, appointments, inventory, and staff management. Built with Js,css,html
+
+
+
+## Features
+
+- **Pet Management**: CRUD operations for pets (name, breed, age, medical history).
+- **Customer Profiles**: Track customer details and their adopted pets.
+- **Appointment Scheduling**: Manage vet visits, grooming, and consultations.
+- **Inventory Tracking**: Monitor pet food, toys, and supplies stock levels.
+- **Staff Management**: Assign roles and manage employee information.
+
+## Technologies
+
+- **Backend**: Node.js
+- **API Documentation**: fetchDogNews/fetchCatNews
+
+## Installation
+
+1. **Prerequisites**:
+   - Node.js (v14+)
+
+2. **Clone the repository**:
+   ```bash
+   git clone https://github.com/lochan-m05/pet-shop
+   cd pet-shop
