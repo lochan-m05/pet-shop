@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomecare - Pet Care Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add AOS library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Add GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Add Swiper for carousels -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/dog logo design.jpeg" alt="Tomecare Logo">
+            <h1>Tomecare</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="sign-up-btn">Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>We Take Care Your Pets <span class="break-after">With <span>Kind</span></span></h1>
+                    <p>Provide Proper Nutrition, Regular Exercise, Veterinary Care, Love, And Attention For Your Pet's Overall Well-Being.</p>
+                    <a href="#services" class="primary-btn">Learn More</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/cool-dog.jpg" alt="Cool dog with sunglasses">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <h3>Why People Choose As</h3>
+                <p>For The Reason People Choose As</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/grooming.jpg" alt="Pet Grooming & Spa">
+                    </div>
+                    <h3>Pet Grooming & Spa</h3>
+                    <p>Pamper Your Furry Friend With A Luxurious Grooming.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/vaccination.jpg" alt="Vaccination">
+                    </div>
+                    <h3>Vaccination</h3>
+                    <p>Regular Pet Vaccinations Provide Crucial Protection</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/training.jpg" alt="Training & Care">
+                    </div>
+                    <h3>Training & Care</h3>
+                    <p>Strengthens The Human-Animal Bond, And Cultivates</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/walking.jpg" alt="Pet Walking">
+                    </div>
+                    <h3>Pet Walking</h3>
+                    <p>Professional Pet Walking Ensures Exercise</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Your Pet Section -->
+        <section class="pets-section">
+            <div class="section-title">
+                <h2>About Your Pet</h2>
+                <p>Discover detailed information about different breeds and their unique characteristics</p>
+            </div>
+            <div class="pets-grid">
+                <div class="pet-card" id="random-dog">
+                    <div class="pet-image">
+                        <img src="images/lab-yellow.jpg" alt="Random Dog Breed">
+                    </div>
+                    <h3>Discover Dog Breeds</h3>
+                    <p class="breed-info">Loading breed information...</p>
+                    <div class="pet-details">
+                        <span class="detail-item">Life Span: <span class="life-span">Loading...</span></span>
+                        <span class="detail-item">Bred For: <span class="bred-for">Loading...</span></span>
+                        <span class="detail-item">Breed Group: <span class="breed-group">Loading...</span></span>
+                    </div>
+                    <button class="learn-more">Learn More</button>
+                </div>
+                <div class="pet-card" id="german-shepherd">
+                    <div class="pet-image">
+                        <img src="images/german-shepherd.jpg" alt="German Shepherd">
+                    </div>
+                    <h3>German Shepherd</h3>
+                    <p class="breed-info">Loading breed information...</p>
+                    <div class="pet-details">
+                        <span class="detail-item">Life Span: <span class="life-span">Loading...</span></span>
+                        <span class="detail-item">Bred For: <span class="bred-for">Loading...</span></span>
+                        <span class="detail-item">Height: <span class="height">Loading...</span></span>
+                    </div>
+                    <button class="learn-more">Learn More</button>
+                </div>
+                <div class="pet-card" id="persian-cat">
+                    <div class="pet-image">
+                        <img src="images/persian-cat.jpg" alt="Persian Cat">
+                    </div>
+                    <h3>Persian Cat</h3>
+                    <p class="breed-info">Loading breed information...</p>
+                    <div class="pet-details">
+                        <span class="detail-item">Origin: <span class="origin">Loading...</span></span>
+                        <span class="detail-item">Life Span: <span class="life-span">Loading...</span></span>
+                        <span class="detail-item">Temperament: <span class="temperament">Loading...</span></span>
+                    </div>
+                    <button class="learn-more">Learn More</button>
+                </div>
+                <div class="pet-card" id="rabbit">
+                    <div class="pet-image">
+                        <img src="images/rabbit.jpg" alt="Rabbit">
+                    </div>
+                    <h3>Rabbit</h3>
+                    <p>Rabbits are wonderful companions known for their gentle nature and unique personalities.</p>
+                    <div class="pet-details">
+                        <span class="detail-item">Life Span: 8-12 years</span>
+                        <span class="detail-item">Diet: Hay and vegetables</span>
+                        <span class="detail-item">Space: Indoor/Outdoor</span>
+                    </div>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news-section">
+            <div class="news-header">
+                <span class="section-tag">Our News</span>
+                <div class="title-row">
+                    <h2>News & Article</h2>
+                    <a href="#" class="see-more">See More <i class="fas fa-paw"></i></a>
+                </div>
+                <p class="subtitle">Stay updated with the latest tips and news about pet care and health.</p>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news-grooming.jpg" alt="Dog grooming tips">
+                        <span class="category">Groom</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Give this Vitamin to your Dog to Makes the Fur Glowing</h3>
+                        <div class="news-meta">
+                            <span class="date"><i class="far fa-calendar"></i> May 5, 2024</span>
+                        </div>
+                        <p>Essential vitamins and nutrients that can help improve your dog's coat health and make their fur shine naturally.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news-adoption.jpg" alt="Dog adoption tips">
+                        <span class="category">Tips</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>This is What You Need to Consider Before Adopt a Dog</h3>
+                        <div class="news-meta">
+                            <span class="date"><i class="far fa-calendar"></i> May 4, 2024</span>
+                        </div>
+                        <p>Important factors to consider before adopting a dog to ensure a happy and successful pet adoption experience.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="images/news-home-grooming.jpg" alt="Home grooming guide">
+                        <span class="category">Groom</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Why Grooming Your Dog at Home is Important to do</h3>
+                        <div class="news-meta">
+                            <span class="date"><i class="far fa-calendar"></i> May 4, 2024</span>
+                        </div>
+                        <p>Learn the benefits of regular home grooming and essential tips for maintaining your pet's hygiene.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-breeder" id="about">
+            <div class="about-breeder-content">
+                <div class="about-breeder-image">
+                    <div class="paw-print-bg"></div>
+                    <img src="images/kid-with-dog.jpg" alt="Kid with puppy">
+                </div>
+                <div class="about-breeder-text">
+                    <span class="section-tag">About Us</span>
+                    <h2>Best Service to your Loved Pets</h2>
+                    <p>At Tomecare, we believe pets aren't just animals—they're family. Founded in 2024, our mission is to make life happier, healthier, and more paws-itively wonderful for pets and their humans.As lifelong pet lovers, we noticed a gap in the market: trustworthy, compassionate resources that cater to all aspects of pet parenting. Whether you're raising a playful pup, a curious cat, or a tiny hamster with a big personality, we're here to guide you with expert advice, high-quality products, and a community that shares your passion.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <img src="images/breeder-icon.svg" alt="Professional Breeder">
+                            </div>
+                            <h3>Compassion First</h3>
+                            <p>Every tip, product, or story we share is crafted with your pet's well-being in mind</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <img src="images/quality-icon.svg" alt="Standard Quality">
+                            </div>
+                            <h3>Community-Driven</h3>
+                            <p>Join a network of pet lovers who swap stories, support each other, and geek out over adorable pet photos.</p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="about-btn">About Us <i class="fas fa-paw"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us" data-aos="fade-up">
+            <h2>Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Loving Care</h3>
+                    <p>We treat your pets like family with personalized attention and care that makes them feel at home.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-doctor"></i>
+                    </div>
+                    <h3>Expert Staff</h3>
+                    <p>Our team of qualified veterinarians and caregivers ensures the best medical care for your pets.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Service</h3>
+                    <p>Round-the-clock pet care support available whenever you need us, day or night.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Modern Facility</h3>
+                    <p>State-of-the-art pet care facilities equipped with the latest technology and comfort features.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="client-image">
+                        <img src="images/client1.jpg" alt="Client">
+                    </div>
+                    <p class="testimonial-text">"Amazing service! My dog loves coming here for grooming."</p>
+                    <h4>Sarah Johnson</h4>
+                    <p class="client-title">Dog Owner</p>
+                </div>
+                <!-- Add more testimonial cards as needed -->
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing">
+            <h2>Our Pricing Plans</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Basic Care</h3>
+                    <div class="price">$29<span>/visit</span></div>
+                    <ul>
+                        <li>Basic Grooming</li>
+                        <li>Health Check</li>
+                        <li>Nail Trimming</li>
+                        <li>Basic Training Tips</li>
+                    </ul>
+                    <button class="price-btn">Choose Plan</button>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Premium Care</h3>
+                    <div class="price">$49<span>/visit</span></div>
+                    <ul>
+                        <li>Full Grooming</li>
+                        <li>Vet Consultation</li>
+                        <li>Spa Treatment</li>
+                        <li>Training Session</li>
+                    </ul>
+                    <button class="price-btn">Choose Plan</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Luxury Care</h3>
+                    <div class="price">$79<span>/visit</span></div>
+                    <ul>
+                        <li>Premium Grooming</li>
+                        <li>Full Vet Service</li>
+                        <li>Premium Boarding</li>
+                        <li>VIP Treatment</li>
+                    </ul>
+                    <button class="price-btn">Choose Plan</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Pet Care Street, City, Country</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 234 567 8900</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@zentail.com</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <input type="tel" placeholder="Phone Number">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="logo.png" alt="ZenTail" class="footer-logo">
+                <p>Professional pet care services for your beloved pets.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li>Pet Grooming</li>
+                    <li>Veterinary Care</li>
+                    <li>Pet Boarding</li>
+                    <li>Pet Training</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ZenTail. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-button" id="chatButton">
+            <i class="fas fa-robot"></i>
+            <span class="notification-dot"></span>
+        </div>
+        
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <div class="assistant-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div>
+                        <h3>ZenTail Assistant</h3>
+                        <span class="status">Online</span>
+                    </div>
+                </div>
+                <button class="close-chat" id="closeChat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="message assistant">
+                    <p>👋 Hi! I'm your ZenTail assistant. How can I help you today?</p>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button class="voice-record-btn" id="voiceRecordBtn">
+                    <i class="fas fa-microphone"></i>
+                    <span class="recording-wave"></span>
+                </button>
+                <button id="sendMessage">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-animation"></div>
+    </div>
+
+    <script src="animations.js"></script>
+    <script src="voice-chat.js"></script>
+    <script src="chat.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/pets.js"></script>
+</body>
+</html> 

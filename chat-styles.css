@@ -1,0 +1,131 @@
+/* Chat Widget Styles */
+.chat-widget {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.chat-button {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(255, 107, 155, 0.3);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.chat-button i {
+    color: var(--light);
+    font-size: 1.5rem;
+}
+
+.notification-dot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background: #00FF00;
+    border-radius: 50%;
+    border: 2px solid var(--light);
+}
+
+.chat-container {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 350px;
+    height: 500px;
+    background: var(--light);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    padding: 1rem;
+    background: var(--gradient);
+    color: var(--light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.assistant-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--light);
+}
+
+.status {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+
+.message.user {
+    margin-left: auto;
+}
+
+.message p {
+    padding: 0.8rem 1rem;
+    border-radius: 15px;
+    background: var(--secondary);
+    color: var(--dark);
+}
+
+.message.user p {
+    background: var(--gradient);
+    color: var(--light);
+}
+
+.chat-input {
+    padding: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    outline: none;
+}
+
+.chat-input button {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient);
+    border: none;
+    border-radius: 50%;
+    color: var(--light);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+} 
