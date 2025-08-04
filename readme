@@ -6,11 +6,11 @@ A comprehensive backend system for managing a pet shop, including pet records, c
 
  Features
 
-- **Pet Management**: CRUD operations for pets (name, breed, age, medical history).
-- **Customer Profiles**: Track customer details and their adopted pets.
-- **Appointment Scheduling**: Manage vet visits, grooming, and consultations.
-- **Inventory Tracking**: Monitor pet food, toys, and supplies stock levels.
-- **Staff Management**: Assign roles and manage employee information.
+- Pet Management: CRUD operations for pets (name, breed, age, medical history).
+- Customer Profiles: Track customer details and their adopted pets.
+- Appointment Scheduling: Manage vet visits, grooming, and consultations.
+- Inventory Tracking: Monitor pet food, toys, and supplies stock levels.
+- Staff Management: Assign roles and manage employee information.
 
  Technologies
 
